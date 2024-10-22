@@ -10,12 +10,14 @@
   --dark-white:#d2f1f3;
   --b:#0b1214;
   --main-color:rgb(4, 153, 223);
+  --card:#292929;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{

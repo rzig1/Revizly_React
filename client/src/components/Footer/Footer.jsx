@@ -11,7 +11,7 @@ const Footer = () => {
         <p>revizlytn@gmail.com</p>
     </div>
     <div class="item-3" id="contact">
-        <a href="https://github.com/rzig1"> &copy Author: AbdelHedi Rziga</a>
+        <a href="https://github.com/rzig1">  Author: AbdelHedi Rziga</a>
     </div>
     </div>
   )

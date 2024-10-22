@@ -1,0 +1,140 @@
+/* General styling for the section */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+  
+  /* Individual card for each exam */
+  .card {
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effect for the cards */
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Styling for exam title */
+  .card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 15px 0 10px 0;
+  }
+  
+  /* Styling for exam level */
+  .card h5 {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the PDF image */
+  .card img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* Container for buttons */
+  .btn-pdf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* Read button styling */
+  .btn-read {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Download button styling */
+  .btn-download {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Image for the download button */
+  .btn-download img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover effects for buttons */
+  .btn-read:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .btn-download:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* PDF container styling */
+ /* Styling for the PDF container */
+.pdf-container {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  max-height: 80vh;
+}
+
+/* Styling for canvas (PDF page rendering) */
+.pdf-container canvas {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Make the PDF container responsive */
+@media (max-width: 600px) {
+  .pdf-container {
+    max-height: 60vh;
+    padding: 10px;
+  }
+}
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    section {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .btn-pdf {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btn-read, .btn-download img {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
