@@ -18,10 +18,7 @@ Currently, there is **no backend** implemented for **Revizly**; the platform is 
 
 The design of **Revizly** takes inspiration from **retro 80s video games**, adding a nostalgic, yet fun, interface for learners. The pixelated fonts, bright colors, and bold shapes are sure to evoke memories of classic arcade games! 🎮✨
 
-## 🔗 Deployment
 
-Check out the deployed version of **Revizly** here:
-[Revizly Deployment Link](#)
 
 ---
 
