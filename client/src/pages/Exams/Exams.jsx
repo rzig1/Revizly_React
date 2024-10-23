@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import './Exams.css';
 import '../../workers/pdfWorker'; // Correct path to import the worker
+import { assets } from '../../assets/assets';
 
 const Exams = () => {
   const [currentPdf, setCurrentPdf] = useState(null);
-  const [numPages, setNumPages] = useState(null);
-  const [error, setError] = useState(null); // State for error handling
+  
 
   const exams = [
     { title: 'Algo I Exam', level: '2LM', file: '/pdf/pdf1.pdf' },
@@ -42,20 +42,9 @@ const Exams = () => {
         ))}
       </section>
 
-      <h1>PDF Reader Example</h1>
+      <h1>PDF Reader </h1>
       <div className="pdf-container">
-        {currentPdf && (
-          <Document
-            file={currentPdf}
-            onLoadSuccess={onDocumentLoadSuccess}
-            onLoadError={onDocumentLoadError} // Add error handling
-          >
-            {Array.from(new Array(numPages), (el, index) => (
-              <Page key={`page_${index + 1}`} pageNumber={index + 1} />
-            ))}
-          </Document>
-        )}
-        {error && <div>Error loading PDF: {error}</div>} {/* Display error message */}
+      <embed src={assets.pdf2} width="100%" height="600px" />
       </div>
     </div>
   );

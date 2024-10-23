@@ -1,34 +1,56 @@
-:root{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
   --primary-color: #71d3da;
-  --lil_primary:#b2faff;
+  --lil_primary: #b2faff;
   --secondary-color: #e2e2e2;
-  --w:#ffffff;
-  --g:#636363;
-  --light_g:#bdbdbd;
-  --icon:#ccc;
+  --w: #ffffff;
+  --g: #636363;
+  --light_g: #bdbdbd;
+  --icon: #ccc;
   --dark-primary-color: #51b7be;
-  --dark-white:#d2f1f3;
-  --b:#0b1214;
-  --main-color:rgb(4, 153, 223);
-  --card:#292929;
+  --dark-white: #d2f1f3;
+  --b: #0b1214;
+  --main-color: rgb(4, 153, 223);
+  --card: #292929;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: var(--b);
   display: flex;
   flex-direction: column;
-  font-family: cursive  ;
+  font-family: cursive;
   color: var(--dark-primary-color);
   margin: 12px;
   font-weight: 200;
-  height:100vh;
-  
+  height: 100vh;
+}
+.text-primary-color {
+  color: var(--primary-color);
+}
 
+.border-primary-color {
+  border-color: var(--primary-color);
+}
+.underline-primary {
+  text-decoration: underline;
+  text-decoration-color: var(--primary-color);
+}
+.primary-color{
+  color: var(--primary-color);
+}
+ .dark-primary-color{
+  color: var(--dark-primary-color);
+ }
+.bg-primary-color{
+  background-color: var(--primary-color);
 }
